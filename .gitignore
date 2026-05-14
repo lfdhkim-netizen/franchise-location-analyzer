@@ -1,0 +1,16 @@
+# Local Claude settings (do not commit personal config)
+.claude/settings.local.json
+
+# Generated reports
+*.docx
+!docs/templates/*.docx
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
