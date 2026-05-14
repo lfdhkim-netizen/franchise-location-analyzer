@@ -14,3 +14,7 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# ZIP build scratch (the final zip is kept in dist/)
+dist/staging/
+dist/verify/

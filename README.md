@@ -48,6 +48,20 @@ cp -r <cloned-repo>/.claude/skills/franchise-location-analyzer ~/.claude/skills/
 
 Claude Code를 재시작하면 스킬이 자동 인식된다.
 
+### 옵션 C. Claude.ai 일반 채팅(웹/데스크탑) 업로드
+
+이 스킬은 [`dist/franchise-location-analyzer.zip`](dist/franchise-location-analyzer.zip)에 claude.ai 업로드 형식(ZIP)으로 미리 패키징되어 있다.
+
+1. `dist/franchise-location-analyzer.zip` 다운로드
+2. claude.ai 접속 → 오른쪽 위 프로필 → **Settings → Customize → Skills**
+3. **"+ Create skill" → "Upload a skill"** 선택 → ZIP 업로드
+4. (사전 요건) **Settings → Features → Code Execution 활성화** 필요
+5. 업로드 후 일반 채팅에서 자연어로 호출되면 자동 실행됨
+   - 예: "강남 테헤란로 ○○○ 신규점 검토해줘…"
+
+**플랜 요건**: Free / Pro / Max / Team / Enterprise 모두 지원 (단, Code Execution 활성화 필수).
+**호출 방식**: claude.ai의 Skills는 슬래시 호출이 아닌 **자연어 매칭(description 기반)** 으로 자동 트리거된다.
+
 ### 호출 방법
 다음과 같이 자연어로 입력하면 스킬이 트리거된다.
 
